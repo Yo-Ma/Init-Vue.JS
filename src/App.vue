@@ -6,12 +6,13 @@
     <h1>{{ msg }}</h1>
 
     <h2> Coffee Machine One </h2>
-    <toggle-button :value="true" :labels="{checked: 'Active', unchecked: 'inactive'}" width="70"/>
+    <toggle-button :value="true" :labels="{checked: 'Active', unchecked: 'inactive'}" width="80" height="30"/>
 
     <h2> Coffee Machine Two </h2>
-    <toggle-button :value="false" :labels="{checked: 'Active', unchecked: 'inactive'}" width="70"/>
-
+    <toggle-button :value="false" :labels="{checked: 'Active', unchecked: 'inactive'}" width="80" height="30"/>
+    <first-component :test="msg"/>
   </div>
+
 </template>
 
 <script>
